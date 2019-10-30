@@ -1,0 +1,12 @@
+# 정렬(K번째 수)
+def solution(array, commands):
+    answer = []
+    for i in range(len(commend)):
+        first = commend[i][0] - 1
+        last = commend[i][1]
+        take = commend[i][2] - 1
+
+        array_sliced = sorted(array[first:last])
+        answer.append(array_sliced[take])
+
+    return answer
